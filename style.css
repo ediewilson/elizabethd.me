@@ -5,6 +5,11 @@ body {
   font-family: 'Telex', sans-serif;
 }
 
+html {
+  margin: 0;
+  padding: 0;
+}
+
 .header {
   background-image: url(https://upload.wikimedia.org/wikipedia/commons/8/8a/100m_women_Golden_League_2007_in_Zurich.jpg);
   background-size: cover;
@@ -12,13 +17,13 @@ body {
   text-align: center;
   display: flex;
   align-items: center;
-  font-size: 8vw;
-  -webkit-text-stroke-width: 0.01vw;
+  font-size: 8vmin;
+  -webkit-text-stroke-width: 0.01vmin;
   -webkit-text-stroke-color: black;
 } 
 
 .top-bar {
-  font-size: 3vw;
+  font-size: 3vmin;
   display: flex;
   flex-direction: row;
   justify-content: space-around;
@@ -30,7 +35,7 @@ body {
 }
 
 .nav-item:hover {
-  color: rgb(51, 41, 41)
+  color: rgb(255, 0, 0)
 }
 
 .one {
@@ -60,19 +65,12 @@ body {
   width: 100%;
   height: auto;
 }
-.sponsor {
-  list-style-type: none;
-  display: flex;
-  align-self: flex-start;
-}
 
 .one {
   display: flex;
   flex-direction: row;
   justify-content: space-around;
 }
-
-
 
 ul.foot {
   display: flex;
@@ -81,7 +79,6 @@ ul.foot {
 
 }
 .principles {
-    background-color: whitesmoke;
     display: flex;
     flex-direction: column;
     text-align: center;
@@ -132,12 +129,12 @@ footer {
 /*https://www.w3schools.com/howto/howto_css_social_media_buttons.asp to learn to animate buttons*/
 
 #join {
-  border-radius: 15px;
+  border-radius: 2vmax;
   background-color: rgb(228, 22, 22); 
   color: rgb(255, 251, 0);
-  padding: 15px 25px;
+  padding: 2vmax 3.5vmax;
   text-align: center;
-  font-size: 16px;
+  font-size: 2vmax;
   font-family: 'Telex', sans-serif;
   transition-duration: 0.4s;
   box-shadow: 0 9px #999;
@@ -149,8 +146,8 @@ footer {
 
 #join:active {
   background-color: rgb(194, 19, 19);
-  box-shadow: 0 5px #666;
-  transform: translateY(4px);
+  box-shadow: 0 0.75vmax #666;
+  transform: translateY(0.4vmax);
 }
 
 .CTA {
@@ -160,7 +157,7 @@ footer {
 
 .subtitle {
   transition-duration: 0.6s;
-  font-size: 4vw;
+  font-size: 5vmax;
 }
 
 .subtitle:hover {
@@ -172,13 +169,22 @@ footer {
   .top-bar {
   display: flex;
   flex-direction: column;
-  justify-content: space-around;
+  justify-content: space-between;
   background-color: rgb(177, 174, 174);  list-style-type: none;
   align-items: center;
+  padding-top: 4%;
+  padding-bottom: 4%;
   }
+  
   .one {
     display: flex;
     flex-direction: column;
+  }
+  
+  footer {
+  display: flex;
+  justify-content: space-around;
+  flex-direction: column;
   }
 }
 
