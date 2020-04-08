@@ -1,122 +1,124 @@
 body {
-    margin: 0;
-    padding: 0;
-    overflow-x: hidden;
-    font-family: 'Telex', sans-serif;
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+  font-family: 'Telex', sans-serif;
+}
+
+.header {
+  background-image: url(https://upload.wikimedia.org/wikipedia/commons/8/8a/100m_women_Golden_League_2007_in_Zurich.jpg);
+  background-size: cover;
+  color: white;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  font-size: 8vw;
+  -webkit-text-stroke-width: 0.01vw;
+  -webkit-text-stroke-color: black;
+} 
+
+.top-bar {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  background-color: rgb(177, 174, 174);  list-style-type: none;
+  height: 75px;
+  align-items: center;
+}
+
+.nav-item:hover {
+  color: rgb(51, 41, 41)
+}
+
+.one {
+  background-color: rgb(255, 255, 108);
+}
+
+p.train-p {
+  display: flex;
+  align-items: flex-end;
+}
+
+.gallery {
+  width: 100%;
+  overflow-x: scroll;
+  overflow-y: hidden;
+  white-space: nowrap;
+}
+
+.gallery::-webkit-scrollbar {
+  display: none;
   }
-  
-  .header {
-    background-image: url(https://upload.wikimedia.org/wikipedia/commons/8/8a/100m_women_Golden_League_2007_in_Zurich.jpg);
-    background-size: cover;
-    color: white;
+
+.pic {
+  margin-right: 20px;
+  margin-bottom: 20px;
+  width: 250px;
+  height: 250px;
+  clip:rect(0px,60px,200px,0px);
+}
+
+.end-image {
+  width: 100%;
+  height: auto;
+}
+.sponsor {
+  list-style-type: none;
+  display: flex;
+  align-self: flex-start;
+}
+
+.foot {
+  display: flex;
+  align-content: flex-end;
+}
+
+.one {
+  display: flex;
+  flex-direction: row;
+}
+
+.principles {
+    background-color: whitesmoke;
+    display: flex;
+    flex-direction: column;
     text-align: center;
-    display: flex;
+    justify-content: center;
     align-items: center;
-    font-size: 8vw;
-    -webkit-text-stroke-width: 0.01vw;
-    -webkit-text-stroke-color: black;
-  } 
-  
-  .top-bar {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    background-color: rgb(177, 174, 174);  list-style-type: none;
-    height: 75px;
-    align-items: center;
-  }
-  
-  .nav-item:hover {
-    color: rgb(51, 41, 41)
-  }
-  
-  .one {
-    background-color: rgb(255, 255, 108);
-  }
-  
-  p.train-p {
-    display: flex;
-    align-items: flex-end;
-  }
-  
-  .gallery {
-    width: 100%;
-    overflow-x: scroll;
-    overflow-y: hidden;
-    white-space: nowrap;
-  }
-  
-  .gallery::-webkit-scrollbar {
-    display: none;
-    }
-  
-  .pic {
-    margin-right: 20px;
-    margin-bottom: 20px;
-    width: 250px;
-    height: 250px;
-    clip:rect(0px,60px,200px,0px);
-  }
-  
-  img.end-image {
-    max-width: 100%;
-    height: auto;
-  }
-  .sponsor {
-    list-style-type: none;
-    display: flex;
-    align-self: flex-start;
-  }
-  
-  .foot {
-    display: flex;
-    align-content: flex-end;
-  }
-  
-  .search-bar {
-  
-  }
-  
-  .one {
-    display: flex;
-    flex-direction: row;
-  }
-  
-  .principles {
-      background-color: whitesmoke;
-      display: flex;
-      flex-direction: column;
-      text-align: center;
-      justify-content: center;
-      align-items: center;
-  }
-  
-  p.des {
-    font-size: 2vw;
-  }
-  
-  /*round button tutorial from https://www.w3schools.com/howto/howto_css_social_media_buttons.asp*/
-  .fa {
-    padding: 20px;
-    font-size: 50px;
-    width: 30px;
-    text-align: center;
-    text-decoration: none;
-    margin: 2px 2px;
-    border-radius: 50%;
-  }
-  
-  .fa:hover {
-    opacity: 0.8;
-  }
-  
-  .fa-facebook {
-    background: #3B5998;
-    color: white;
-  }
-  
-  .fa-twitter {
-    background: #55ACEE;
-    color: white;
-  }
-  
+}
+
+p.des {
+  font-size: 2vw;
+}
+
+/*round button tutorial from https://www.w3schools.com/howto/howto_css_social_media_buttons.asp*/
+.fa {
+  padding: 20px;
+  font-size: 50px;
+  width: 30px;
+  text-align: center;
+  text-decoration: none;
+  margin: 2px 2px;
+  border-radius: 50%;
+}
+
+.fa:hover {
+  opacity: 0.8;
+}
+
+.fa-facebook {
+  background: #3B5998;
+  color: white;
+}
+
+.fa-twitter {
+  background: #55ACEE;
+  color: white;
+}
+
+footer {
+  display: flex;
+  justify-content: space-around;
+  flex-flow: row;
+}
+
