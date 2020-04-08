@@ -34,11 +34,6 @@ body {
   background-color: rgb(255, 255, 108);
 }
 
-p.train-p {
-  display: flex;
-  align-items: flex-end;
-}
-
 .gallery {
   width: 100%;
   overflow-x: scroll;
@@ -68,16 +63,19 @@ p.train-p {
   align-self: flex-start;
 }
 
-.foot {
-  display: flex;
-  align-content: flex-end;
-}
-
 .one {
   display: flex;
   flex-direction: row;
 }
 
+
+
+ul.foot {
+  display: flex;
+  justify-content: space-between;
+  list-style-type: none;
+
+}
 .principles {
     background-color: whitesmoke;
     display: flex;
@@ -94,12 +92,12 @@ p.des {
 /*round button tutorial from https://www.w3schools.com/howto/howto_css_social_media_buttons.asp*/
 .fa {
   padding: 20px;
-  font-size: 50px;
+  font-size: 35px;
   width: 30px;
   text-align: center;
   text-decoration: none;
-  margin: 2px 2px;
-  border-radius: 50%;
+  margin: 5px 2px;
+  border-radius: 30%;
 }
 
 .fa:hover {
@@ -107,12 +105,17 @@ p.des {
 }
 
 .fa-facebook {
-  background: #3B5998;
+  background: rgb(84, 132, 236);
   color: white;
 }
 
 .fa-twitter {
-  background: #55ACEE;
+  background: rgb(61, 170, 253);
+  color: white;
+}
+
+.fa-instagram {
+  background: linear-gradient(#dd32ff, #ffc420);
   color: white;
 }
 
@@ -122,3 +125,29 @@ footer {
   flex-flow: row;
 }
 
+#join {
+  border-radius: 15px;
+  background-color: rgb(228, 22, 22); 
+  color: rgb(255, 251, 0);
+  padding: 15px 25px;
+  text-align: center;
+  font-size: 16px;
+  font-family: 'Telex', sans-serif;
+  transition-duration: 0.4s;
+  box-shadow: 0 9px #999;
+}
+
+#join:hover {
+  background-color: rgb(200, 19, 19);
+  }
+
+#join:active {
+  background-color: rgb(194, 19, 19);
+  box-shadow: 0 5px #666;
+  transform: translateY(4px);
+}
+
+.CTA {
+  display: flex;
+  justify-content: center;
+}
