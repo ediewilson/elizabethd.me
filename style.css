@@ -90,14 +90,17 @@ p.des {
   font-size: 2vw;
 }
 
+.gallery-header {
+  font-size: 5vmax;
+}
 /*round button tutorial from https://www.w3schools.com/howto/howto_css_social_media_buttons.asp*/
 .fa {
-  padding: 5vmax;
+  padding: 3vmax;
   font-size: 7vmax;
-  width: 6vmax;
+  width: 4vmax;
   text-align: center;
   text-decoration: none;
-  margin: 5vmax 2vmax;
+  margin: 4vmax 2vmax;
   border-radius: 30%;
 }
 
