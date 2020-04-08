@@ -17,13 +17,13 @@ html {
   text-align: center;
   display: flex;
   align-items: center;
-  font-size: 8vmin;
-  -webkit-text-stroke-width: 0.01vmin;
+  font-size: 8vw;
+  -webkit-text-stroke-width: 0.01vw;
   -webkit-text-stroke-color: black;
 } 
 
 .top-bar {
-  font-size: 3vmin;
+  font-size: 5vmin;
   display: flex;
   flex-direction: row;
   justify-content: space-around;
@@ -56,8 +56,8 @@ html {
 .pic {
   margin-right: 5vw;
   margin-bottom: 5vw;
-  width: 250px;
-  height: 250px;
+  width: 45vmax;
+  height: 45vmax;
   clip:rect(0px,60px,200px,0px);
 }
 
@@ -92,12 +92,12 @@ p.des {
 
 /*round button tutorial from https://www.w3schools.com/howto/howto_css_social_media_buttons.asp*/
 .fa {
-  padding: 20px;
-  font-size: 35px;
-  width: 30px;
+  padding: 5vmax;
+  font-size: 7vmax;
+  width: 6vmax;
   text-align: center;
   text-decoration: none;
-  margin: 5px 2px;
+  margin: 5vmax 2vmax;
   border-radius: 30%;
 }
 
@@ -166,14 +166,29 @@ footer {
 }
 
 @media only screen and (max-width: 640px) {
+  
+  .header {
+  font-size: 8vmin;
+  -webkit-text-stroke-width: 0.01vmin;
+  } 
+
   .top-bar {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  background-color: rgb(177, 174, 174);  list-style-type: none;
-  align-items: center;
-  padding-top: 4%;
-  padding-bottom: 4%;
+    font-size: 3vmin;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background-color: rgb(177, 174, 174);  
+    list-style-type: none;
+    align-items: center;
+    padding-top: 4%;
+    padding-bottom: 4%;
+  }
+  .pic {
+    margin-right: 5vw;
+    margin-bottom: 5vw;
+    width: 250px;
+    height: 250px;
+    clip:rect(0px,60px,200px,0px);
   }
   
   .one {
@@ -186,5 +201,30 @@ footer {
   justify-content: space-around;
   flex-direction: column;
   }
+  #join {
+  border-radius: 2vmax;
+  background-color: rgb(228, 22, 22); 
+  color: rgb(255, 251, 0);
+  padding: 2vmax 3.5vmax;
+  text-align: center;
+  font-size: 2vmax;
+  font-family: 'Telex', sans-serif;
+  transition-duration: 0.4s;
+  box-shadow: 0 9px #999;
+}
+#join:active {
+  background-color: rgb(194, 19, 19);
+  box-shadow: 0 0.75vmax #666;
+  transform: translateY(0.4vmax);
+}
+.fa {
+  padding: 20px;
+  font-size: 35px;
+  width: 30px;
+  text-align: center;
+  text-decoration: none;
+  margin: 5px 2px;
+  border-radius: 30%;
+}
 }
 
